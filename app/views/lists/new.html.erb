@@ -1,5 +1,12 @@
-<%= simple_form_for [ @list, @bookmark ] do |f| %>
-  <%= f.input :comment %>
-  <%= f.input :movie_id, collection: Movie.all %>
+
+<%= simple_form_for [ @list ] do |f| %>
+  <%= f.input :name %>
   <%= f.submit "Submit" %>
-<% end %>
+  <% end %>
+
+
+<%# <%= simple_form_for [ @list, @bookmark ] do |f| %>
+  <%# <%= f.input :comment %>
+  <%# <%= f.input :movie_id, collection: Movie.all %> 
+  <%# <%= f.submit "Submit" %>
+<%# <% end %>
